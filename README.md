@@ -1,7 +1,8 @@
 # pig-game
 This is a simple dice game called Pig Game.
 This game can be played by two (2) player and the first player to reach a total score of 100 or above wins the game
-![Screenshot](images/Guess-My-Number.png)
+![Screenshot](screenshot/Pig-Game-new.png)
+![Screenshot](screenshot/Pig-Game-winner.png)
 
 ## Built With
 
@@ -24,7 +25,7 @@ cd pig-game
 run live-server
 ```
 
-3. Next, you can start playing the game, with Hold score, you can update your total score and the first player to reach 100 or above total score wins the game. You can stop your local server at any time hitting `<Ctrl> + C` on your keyboard.
+3. Next, you can start playing the game by clicking "NEW GAME" button, with Hold score, you can update your total score and the first player to reach 100 or above total score wins the game. You can stop your local server at any time hitting `<Ctrl> + C` on your keyboard.
 
 ## Author
 

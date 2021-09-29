@@ -11,6 +11,7 @@ const diceImg = document.querySelector('.dice')
 const player0EL = document.querySelector('.player--0')
 const player1EL = document.querySelector('.player--1')
 
+
 //STARTING CONDITION
 let currentScore,activePlayer,scores,playing;
 score0EL.textContent = 0
@@ -22,8 +23,8 @@ diceImg.classList.add('hidden')
 
  //SWITCH PLAYER FUNCTION
   const switchPlayer = () => {
+    document.getElementById(`current--${activePlayer}`).textContent = 0 
     activePlayer = activePlayer === 0 ? 1 : 0
-  document.getElementById(`current--${activePlayer}`).textContent = 0 
   currentScore = 0
   player0EL.classList.toggle('player--active');  
   player1EL.classList.toggle('player--active');
@@ -80,13 +81,13 @@ btnHold.addEventListener('click', () => {
 if (playing) {
   //ADD CURRENTSCORE TO TOTAL SCORE
   scores[activePlayer] += currentScore
+  document.getElementById(`current--${activePlayer}`).textContent = 0
   document.getElementById(`score--${activePlayer}`).textContent = scores[activePlayer]
   if (scores[activePlayer] >= 100) {
     playing = false
     document.querySelector(`.player--${activePlayer}`).classList.add('player--winner')
-    document.querySelector(`.player--${activePlayer}`).classList.remove('player--active')
+    document.querySelector(`.player--${activePlayer}`).classList.remove('player--active') 
     diceImg.classList.add('hidden')
-  document.getElementById(`current--${activePlayer}`).textContent = 0
   currentScore = 0
 
  
