@@ -22,6 +22,7 @@ git@github.com:fortuneonyeka/pig-game.git
 2. Now that you have already cloned the repo run the following commands to get the project up and running:
 ```sh
 cd pig-game
+run npm install live-server
 run live-server
 ```
 
